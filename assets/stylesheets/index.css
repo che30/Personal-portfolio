@@ -87,7 +87,7 @@ line-height: 24px;
 .im-1 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(image.png);
   border: 1px solid rgba(0, 0, 0, 0.05);
-  padding-left: 60px;
+  padding-left: 18%;
   padding-top: 50px;
   padding-bottom: 20px;
 }
@@ -96,7 +96,7 @@ url('/assets/images/onlineshopindex2.png'); */
  
 .im-2 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(image.png);
-    padding-left: 50px;
+    padding-left: 18%;
     padding-top: 50px;
     padding-bottom: 30px;
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -137,7 +137,6 @@ color: #727274;
 }
 .get-in-t {
 background: #000000;
-border: 1px solid #000000;
 box-sizing: border-box;
 width: 485px;
 }
@@ -146,13 +145,14 @@ width: 485px;
 font-size: 38px;
 line-height: 105.3%;
 color: #FFFFFF;
+padding-top: 20px;
 }
 .pa-f {
   font-size: 16px;
-line-height: 24px;
-text-align: center;
-
-color: #FFFFFF;
+  line-height: 24px;
+  text-align: center;
+  max-width: 300px;
+  color: #FFFFFF;
 }
 .html-ror {
   font-weight: 500;
@@ -225,17 +225,19 @@ background: #423B39;
 }
 .tic-tac-toe {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(image.png);
-  padding-left: 30px;
+  padding-left: 18%;
+  padding-top: 20px;
+  padding-bottom: 22px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .stay-in-touch {
-  padding-left: 30px;
+  padding-left: 18%;
   padding-top: 40px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .scraper {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(image.png);
-  padding-left: 30px;
+  padding-left: 18%;
   padding-top: 40px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -269,4 +271,100 @@ background: #423B39;
   top: 740px;
   background: #423B39;
   transform: rotate(-90deg);
+}
+.nav-r {
+  width: 30%;
+}
+.my-work-links-icons {
+  width: 100px;
+}
+.wf-g {
+  width: 75%;
+}
+@media (max-width: 567px)
+{ 
+  .nav-r {
+  width: 50%;
+}
+.s-1 {
+  display: none;
+}
+.fc-3 {
+  width: 80%;
+}
+.get-in-t {
+  width: 60%;
+  margin-left: 25%;
+}
+.s-2 {
+  margin-top: 100px;
+}
+.my-work-links {
+  flex-direction: column;
+}
+.pa-6 {
+  width: 300%;
+}
+.my-work-links-icons {
+  width: 200%;
+}
+.s-3 {
+  margin-top: 15%;
+}
+.d-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.d-grid-3 {
+  grid-template-columns: 1fr;
+}
+.s-4 {
+  flex-direction: column;
+}
+.fg-email-name {
+  flex-direction: column;
+}
+.wf-g {
+  width: 60%;
+    margin-left: 25%;  
+}
+.fc-3 {
+  width: 60%;
+    margin-left: 25%;  
+}
+.s-6{
+ padding-right: 50%;
+ padding-left: 45%;
+ padding-top: 10px;
+}
+.d-sm {
+  display: none;
+}
+.pa-f {
+  width: 500% ;
+}
+.im-1 {
+  padding-bottom: 50px;
+}
+.im-2 {
+  padding-bottom: 50px;
+}
+.stay-in-touch {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.scraper {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.tic-tac-toe {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.interested {
+font-size: 25px;
+}
+footer {
+  padding-right: 30%;
+}
 }
