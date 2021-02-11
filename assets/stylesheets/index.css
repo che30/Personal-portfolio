@@ -1,0 +1,272 @@
+body {
+  background: #E5E5E5;
+}
+.orange {
+
+color: #F9855B;
+}
+.hand {
+  position: absolute;
+  width: 36px;
+  height: 54px;
+  left: 7%;
+  top: 188px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 54px;
+}
+.s-1 {
+position: absolute;
+width: 35%;
+height: 800px;
+left: 65%;
+top: 15%;
+
+background: url(/assets/images/background\ shapes-desktop.png)
+}
+.cg {
+margin-left: 5%;
+}
+.pa-1 {
+
+
+font-weight: 800;
+font-size: 50px;
+line-height: 105.3%;
+
+
+color: #000000;
+
+}
+.pa-2 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  
+  color: #727274;
+
+}
+.pa-3 {
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+
+color: #727274;
+}
+.intro {
+font-size: 16px;
+line-height: 24px;
+}
+.s-2 {
+  height: 400px;
+  margin-left: 5%;
+}
+.bckgrd {
+  background: #F9855B;
+}
+.common {
+
+  font-family: Poppins;
+  font-style: normal;
+}
+.d-grid{
+  display: grid;
+  grid-template-columns: 25% 25%;
+  gap: 5px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+}
+.d-grid-2  {
+  display: grid;
+  grid-template-columns: 16.6% 16.6% 16.6%;
+  margin-left: 5%;
+}
+.im-1 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(image.png);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding-left: 60px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+/* linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+url('/assets/images/onlineshopindex2.png'); */
+ 
+.im-2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(image.png);
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.s-4 {
+  margin-top: 100px;
+}
+.h4 {
+  font-weight: 800;
+font-size: 36px;
+line-height: 105.3%;
+/* identical to box height, or 38px */
+
+
+color: #000000;
+}
+.pa-4 {
+  font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+
+color: #727274;
+}
+.h4-1 {
+  font-weight: 600;
+font-size: 20px;
+line-height: 105.3%;
+}
+.pa-5 {
+  font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+
+color: #727274;
+}
+.fg-3 {
+  width: 485px;
+}
+.get-in-t {
+background: #000000;
+border: 1px solid #000000;
+box-sizing: border-box;
+width: 485px;
+}
+.interested {
+  font-weight: 800;
+font-size: 38px;
+line-height: 105.3%;
+color: #FFFFFF;
+}
+.pa-f {
+  font-size: 16px;
+line-height: 24px;
+text-align: center;
+
+color: #FFFFFF;
+}
+.html-ror {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+position: absolute;
+width: 81px;
+height: 21px;
+left: 30%;
+top: 490px;
+background: #423B39;
+}
+.ror {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+  position: absolute;
+  width: 81px;
+  height: 21px;
+  left: 44%;
+  top: 490px;
+  background: #423B39;
+}
+.html-1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+  position: absolute;
+  width: 81px;
+  height: 21px;
+  left: 13%;
+  top: 490px;
+  background: #423B39
+}
+.d-grid-3 {
+  display: grid;
+  grid-template-columns: 16.6% 16.6% 16.6%;
+  /* gap: 30px; */
+  margin-left: 5%;
+}
+.see-1 {
+  position: absolute;
+  left: 3%;
+  top: 550px;
+  transform: rotate(-90deg);
+
+}
+.see-2 {
+  position: absolute;
+  left: 27%;
+  top: 550px;
+  transform: rotate(-90deg);
+}
+.see-3 {
+  position: absolute;
+  left: 24%;
+  top: 780px;
+}
+.tic-tac-toe {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(image.png);
+  padding-left: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.stay-in-touch {
+  padding-left: 30px;
+  padding-top: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.scraper {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(image.png);
+  padding-left: 30px;
+  padding-top: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.html-ror-1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+position: absolute;
+width: 81px;
+height: 21px;
+left: 25%;
+top: 700px;
+background: #423B39;
+}
+.ror-1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+  position: absolute;
+  width: 81px;
+  height: 21px;
+  left: 18.7%;
+  top: 740px;
+  background: #423B39;
+  transform: rotate(-90deg);
+}
