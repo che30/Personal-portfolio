@@ -294,7 +294,7 @@ background: #423B39;
 }
 .get-in-t {
   width: 60%;
-  margin-left: 25%;
+  margin-left: 19%;
 }
 .s-2 {
   margin-top: 100px;
@@ -325,16 +325,16 @@ background: #423B39;
   flex-direction: column;
 }
 .wf-g {
-  width: 60%;
-    margin-left: 25%;  
+    margin-left: 5%; 
+    width: 84%;
 }
 .fc-3 {
-  width: 60%;
-    margin-left: 25%;  
+margin-left: 5%;
+   
 }
 .s-6{
- padding-right: 50%;
- padding-left: 45%;
+ /* padding-right: 70%;
+ padding-left: 45%; */
  padding-top: 10px;
 }
 .d-sm {
@@ -363,8 +363,15 @@ background: #423B39;
 }
 .interested {
 font-size: 25px;
+/* width: 400px; */
 }
 footer {
-  padding-right: 30%;
+  /* padding-right: 100%; */
 }
+.form-w {
+  width: 90%;
+}
+ .fg-3 {
+  width: 105%;
+} 
 }
