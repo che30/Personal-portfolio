@@ -1,12 +1,21 @@
 body {
   background: #E5E5E5;
 }
+/* *{
+  border: 1px solid black;
+} */
 .black {
   color: #000000  !important;
 }
 .orange {
 
 color: #F9855B;
+}
+
+.carousel-control-next-icon::after {
+  content: '>';
+  font-size: 30px;
+  color: black;
 }
 .hand {
   position: absolute;
@@ -75,7 +84,6 @@ line-height: 24px;
   font-family: Poppins;
   font-style: normal;
 }
-
 /* 
 .im-1 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(image.png);
@@ -110,11 +118,12 @@ url('/assets/images/onlineshopindex2.png'); */
 .s-4 {
   margin-top: 100px;
   margin-left: 12%;
-  width: 100%;
+  width: 85%;
   justify-content: space-between;
   align-content: center;
   align-items: center;
 }
+
 .h4 {
   font-weight: 800;
 font-size: 36px;
@@ -147,7 +156,7 @@ width: 485px;
 }
 .get-in-t {
   width: 60%;
-  margin-left: 19%;
+  margin-left: 14%;
   background-color: #000000;
 }
 .interested {
@@ -221,6 +230,9 @@ background: #423B39;
   top: 550px;
   transform: rotate(-90deg);
 
+}
+.fc-3 {
+width: 490px;
 }
 
 .contain-circle {
@@ -316,14 +328,63 @@ background: #423B39;
 .s-3 {
   width: 100%;
 }
-@media (max-width: 567px)
-{ 
-  /* nav {
+.f-l {
+  margin-right: 4%;
+}
+@media (min-width: 768px) and (max-width: 1024px)
+{
+  .s-4 {
     width: 80%;
-  } */
+    flex-direction: column;
+    margin-left: -4%;
+   
+  }
+}
+@media (min-width: 568px) and (max-width: 768px)
+{
+  .s-4 {
+    /* width: 80%; */
+    flex-direction: column;
+    margin-left: 0%;
+    /* margin-left: 3%; */
+  }
+  .pa-1 {
+  font-size: 30px;
+  }
+  .pa-2{
+    width: 58%;
+  }
+  .abt-me{
+   margin-left: 13%;
+  }
+  .my-resume{
+    margin-left: 13%;
+  }
+  .s4-1{
+
+    margin-left: 19%;
+    margin-top: 5%;
+  }
+ 
+}
+
+@media (max-width: 567px)
+{ .pa-4{
+  width: 150%;
+}
+  .pa-1{
+    font-size: 30px;
+  }
   .nav-r {
   width: 50%;
 }
+.abt-me{
+  margin-left: 7%;
+}
+.my-resume{
+  margin-left: 7%;
+}
+
 .s-1 {
   display: none;
 }
@@ -418,4 +479,19 @@ footer {
  align-items: center;
  align-content: center;
 }
+}
+@media (min-width: 472px) and (max-width: 676px)
+{
+  .s4-1{
+    margin-left: -13%;
+    margin-top: 2%;
+   
+  }
+}
+@media (max-width: 472px) {
+  .s4-1{
+    margin-left: 7%;
+    margin-top: 2%;
+   
+  }
 }
