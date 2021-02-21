@@ -85,6 +85,10 @@ line-height: 105.3%;
 color: #000000;
 
 }
+.light-grey{
+    
+  color: #000000;
+}
 .pa-2 {
   font-weight: normal;
   font-size: 18px;
@@ -514,6 +518,10 @@ footer {
  justify-content: center;
  align-items: center;
  align-content: center;
+}
+.s4-1{
+
+  padding-top: 20%;
 }
 }
 @media (min-width: 472px) and (max-width: 676px)
