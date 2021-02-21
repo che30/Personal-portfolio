@@ -375,6 +375,13 @@ background: #423B39;
     margin-left: -4%;
    
   }
+  .my-work-links
+  {
+    flex-direction: column;
+  }
+  .pa-6{
+    width: 200%;
+  }
 }
 @media (min-width: 568px) and (max-width: 768px)
 {
