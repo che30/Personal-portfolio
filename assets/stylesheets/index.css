@@ -400,6 +400,20 @@ background: #423B39;
 
     margin-left: 19%;
     margin-top: 5%;
+    background-color: #000000;
+  }
+  .s-1{
+    display: none;
+  }
+  .dropdown{
+    margin-top: 0.1%;
+    margin-left: 5%;
+  }
+  .my-work-links {
+    flex-direction: column;
+  }
+  .pa-6{
+    width: 200%;
   }
  
 }
@@ -475,7 +489,7 @@ margin-left: 5%;
   display: none;
 }
 .pa-f {
-  width: 500% ;d-flex  justify-content-center align-content-center align-items-center
+  width: 500% ;
   padding-bottom: 50px;
 }
 .stay-in-touch {
@@ -537,5 +551,11 @@ footer {
     margin-left: 7%;
     margin-top: 2%;
    
+  }
+}
+@media (min-with: 566px) and (max-width: 677px)
+{
+  .s4-1{
+    margin-left: 100%;
   }
 }
