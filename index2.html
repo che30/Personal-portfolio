@@ -14,7 +14,7 @@
  
   <nav class="d-flex justify-content-between mt-3 align-items-center">
     
-    <h1 class="orange font-poppins">    Personal portfolio</h1>
+    <h1 class="orange font-poppins"> Portfolio</h1>
   <ul class=" justify-content-around  list-unstyled w-50 d-none d-md-flex d-lg-flex">
     <li class="orange font-poppins home d-none d-md-block d-lg-block"><span><</span>/home></li>
     <li > <a  class="font-poppins text-decoration-none  light-grey" href="#portfolio">Portfolio</a></li>
@@ -56,24 +56,87 @@
   <section class="my-best-work ">
     <p class="best-work pa-4 common text-center  ">My best work</p>
     <div class="slideshow-container  ">
-      <div class="mySlides1 ">
+      <div class="mySlides1" >
         <img src="/assets/images/new_transaction_p.png" class="">
-        <div class="text">Caption Text</div>
+        <div class="text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Voluptatibus dolorem aliquam nam praesentium sed adipisci a sint beatae natus quidem facere, 
+          doloribus iste qui id voluptatum ea amet magnam maxime?</div>
+          <div class="technologies">
+            <div class="d-flex justify-content-between font-poppins align-items-center">
+              <div  >Built with:</div>
+              <div class="bg-dark text-white px-2 py-1">HTML/CSS</div>
+              <div  class="bg-dark text-white px-2 py-1">Bootstrap</div>
+              <div  class="bg-dark text-white px-2 py-1">Javascript</div>
+            </div>
+            <div class="see-live bg-orange btn text-white">
+              see live version
+            </div>
+          </div>
       </div>
-      <div class="mySlides2 d-none">
+      <div class="mySlides1 " >
         <img src="/assets/images/new_transaction_p.png" class="">
-        <div class="text">Caption Text</div>
-      </div>
-      <div class="mySlides3 d-none">
+        <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Veritatis architecto qui velit eius sit enim officiis deleniti cum eveniet
+           doloremque distinctio odit magnam, iure voluptas tempora ipsa ad consequatur laboriosam?</div>
+           <div class="technologies">
+            <div class="d-flex justify-content-between font-poppins align-items-center">
+              <div  >Built with:</div>
+              <div class="bg-dark text-white px-2 py-1">HTML/CSS</div>
+              <div  class="bg-dark text-white px-2 py-1">Bootstrap</div>
+              <div  class="bg-dark text-white px-2 py-1">Javascript</div>
+            </div>
+            <div class="see-live bg-orange btn text-white">
+              see live version
+            </div>
+            </div>
+          </div>
+      <div class="mySlides1" >
         <img src="/assets/images/new_transaction_p.png" class="">
-        <div class="text">Caption Text</div>
+        <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+           Cum nisi, nulla error sint veritatis magni porro quasi molestias, voluptates 
+           facilis incidunt quisquam
+           deleniti praesentium neque iusto corrupti reprehenderit? Atque, quis.</div>
+           <div class="technologies">
+            <div class="d-flex justify-content-between font-poppins align-items-center">
+              <div  >Built with:</div>
+              <div class="bg-dark text-white px-2 py-1">HTML/CSS</div>
+              <div  class="bg-dark text-white px-2 py-1">Bootstrap</div>
+              <div  class="bg-dark text-white px-2 py-1">Javascript</div>
+            </div>
+            <div class="see-live bg-orange btn text-white">
+              see live version
+            </div>
+          </div>
       </div>
-      <a class="prev " onclick="plusSlides(-1, 1)">&#10094;</a>
-      <a class="next " onclick="plusSlides(1, 1)">&#10095;</a>
+   
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next " onclick="plusSlides(1, 0)">&#10095;</a>
       </div>
   </section>
 </main>
-  <script src="./assets/main.js"></script>
+  <script >
+   var slideIndex = [1,1];
+var slideId = ["mySlides1"]
+showSlides(1, 0);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+  
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  console.log()
+  if (n > x.length) {
+    slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
   crossorigin="anonymous"></script>
