@@ -5,12 +5,12 @@ body {
   background: #E5E5E5;
   
 }
-nav{
+/* nav{
   overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  position: fixed; 
+  top: 0;
   width: 100%; 
-}
+} */
 
 h1{
   margin-left: 5%;
@@ -148,6 +148,14 @@ margin-left: 25%;
 width: 500px;
 height: 300px;
 }
+.resume{
+  background-color: #F9855B;
+}
+.lang{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 105.3%;
+}
 @media (max-width: 567px){
   .abt-portfolio-background{
     display: none;
@@ -169,6 +177,20 @@ height: 300px;
     border-radius: 3px 0 0 3px;
   }
   .see-live{
-    margin-left: 6%;
+    margin-left: 26%;
+  }
+  .myImg{
+    width: 200px;
+    border-radius: 10px;
+  }
+  .abtMe-container{
+  width: 400px;
+  height: 300px;
+  }
+  .abtMe-main{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
   }
 }
