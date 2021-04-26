@@ -143,15 +143,7 @@ margin-left: 25%;
   max-width: 75%;
   margin-top: 50px;
 }
-.bg-orange {
-  background-color: #F9855B;
-  border-radius: 10px;
-}
-.see-live{
-  margin-top: 50px;
-}
-.about-div{
-  width: 5%;
+.bg-orange {right: 4%;
   height: 4px;
   margin-top: 15px;
 }
@@ -196,7 +188,7 @@ height: 300px;
    
   }
   .next {
-    right: 10%;
+    right: 4%;
     border-radius: 3px 0 0 3px;
   }
   .prev{
