@@ -75,8 +75,43 @@ background: url(../images/backgroundshapesdesktop.png);
 }
 .abt-portfolio{
   margin-left: 5%;
+  margin-top: 80px;
+  height: 500px;
 }
 .pa-1{
   color: #000000;
   font-weight: 800;
+}
+.my-work-links-icons{
+width: 25%;
+}
+.best-work{
+  /* margin-left: 5%; */
+  margin-top: 80px;
+}
+.slideshow-container {
+margin-left: 25%;
+}
+.mySlides1 img{
+   width: 75%; 
+  height: 300px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  /* top: 50%; */
+  /* width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(94, 11, 11);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; */
+}
+@media (max-width: 567px){
+  .abt-portfolio-background{
+    display: none;
+  }
 }
