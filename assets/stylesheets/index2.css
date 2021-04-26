@@ -98,6 +98,20 @@ margin-left: 25%;
   height: 300px;
   border-radius: 10px;
 }
+.contain-circle {
+  height: 450px;
+  width: 450px;
+  margin-left: 5%;
+}
+.circle {
+  height: 100%;
+ background-color:  #dad6d6;;
+ border-radius: 50%;
+}
+.im-1{
+  margin-top: 90px;
+  margin-left: 50px;
+}
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -113,7 +127,7 @@ margin-left: 25%;
   user-select: none; 
 }
 .next {
-  right: 12%;
+  right: 25%;
   border-radius: 3px 0 0 3px;
 }
 .prev{
@@ -165,6 +179,11 @@ height: 300px;
 .input-1{
   width: 40%;
 }
+.get-in-touch{
+  background-color: black;
+  margin-left: 20%;
+  width: 60%;
+}
 @media (max-width: 567px){
   .abt-portfolio-background{
     display: none;
@@ -196,6 +215,7 @@ height: 300px;
   width: 400px;
   height: 300px;
   }
+  
   .abtMe-main{
     flex-direction: column;
     justify-content: space-around;
