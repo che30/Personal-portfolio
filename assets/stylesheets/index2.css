@@ -30,9 +30,8 @@ nav ul{
   font-size: 1.5rem;
 }
 .dropbtn{
-  background-color: grey;
   height: 40px;
-  color: white;
+  color:#F9855B;
   border: none;
   cursor: pointer;
 }
@@ -60,9 +59,6 @@ nav ul{
 .dropdown-content a:hover {background-color: #2d7006}
 .dropdown:hover .dropdown-content {
   display: block;
-}
-.dropdown:hover .dropbtn {
-  background-color: #F9855B;
 }
 .abt-portfolio-background{
   position: absolute;
@@ -95,6 +91,7 @@ margin-left: 25%;
 .mySlides1 img{
    width: 75%; 
   height: 300px;
+  border-radius: 10px;
 }
 .prev, .next {
   cursor: pointer;
@@ -140,5 +137,21 @@ margin-left: 25%;
   }
   .technologies>div{
     flex-direction: column;
+  }
+  .prev, .next {
+  
+    top: 140%;
+   
+  }
+  .next {
+    right: 8%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: 13%;
+    border-radius: 3px 0 0 3px;
+  }
+  .see-live{
+    margin-left: 6%;
   }
 }
