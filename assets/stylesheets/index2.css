@@ -1,5 +1,6 @@
 *{
   margin: 0;
+
 }
 body {
   background: #E5E5E5;
@@ -163,12 +164,10 @@ width: 500px;
 height: 300px;
 }
 .resume{
-  background-color: #F9855B;
-}
-.lang{
   font-weight: 600;
   font-size: 20px;
   line-height: 105.3%;
+  background-color: #F9855B;
 }
 .background-orange{
   background-color: #F9855B;
@@ -193,15 +192,15 @@ height: 300px;
   }
   .prev, .next {
   
-    top: 140%;
+    top: 150%;
    
   }
   .next {
-    right: 8%;
+    right: 10%;
     border-radius: 3px 0 0 3px;
   }
   .prev{
-    left: 13%;
+    left: 19%;
     border-radius: 3px 0 0 3px;
   }
   .see-live{
@@ -212,7 +211,7 @@ height: 300px;
     border-radius: 10px;
   }
   .abtMe-container{
-  width: 400px;
+  width: 300px;
   height: 300px;
   }
   
@@ -222,6 +221,7 @@ height: 300px;
     align-items: center;
     align-content: center;
   }
+
   .input-1{
     width: 100%;
   } 
@@ -231,4 +231,24 @@ height: 300px;
   .footerParagraph{
     width: 300px;
   }
+  .contain-circle {
+    height: 250px;
+    width: 250px;
+    margin-left: 0%;
+  }
+  .im-1 {
+    margin-top: 40px;
+  /* margin-left: 50px; */
+  }
+
+  .mySlides1 img{
+   height: 200px;
+   width: 60%;
+   
+ }
+ .last-footer{
+   width: 95%;
+   flex-direction: column;
+ }
+ 
 }
