@@ -156,6 +156,15 @@ height: 300px;
   font-size: 20px;
   line-height: 105.3%;
 }
+.background-orange{
+  background-color: #F9855B;
+}
+.footerParagraph{
+  width: 500px;
+}
+.input-1{
+  width: 40%;
+}
 @media (max-width: 567px){
   .abt-portfolio-background{
     display: none;
@@ -192,5 +201,14 @@ height: 300px;
     justify-content: space-around;
     align-items: center;
     align-content: center;
+  }
+  .input-1{
+    width: 100%;
+  } 
+  form>div{
+    flex-direction: column;
+  }
+  .footerParagraph{
+    width: 300px;
   }
 }
