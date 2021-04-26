@@ -3,199 +3,317 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/stylesheets/index.css">
-  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="./assets/stylesheets/index2.css">
+   <title>Portfolio</title>
 </head>
 <body>
-
-<div class="dropdown d-block d-md-none d-lg-none ">
-  <button class="dropbtn"><i class="fa fa-bars"></i></button>
-  <div class="dropdown-content">
-    <a href="#portfolio">Portfolio</a>
-    <a href="#abt-me">About</a>
-    <a href="#">contact</a>
-  </div>
-</div>
-  <nav class="d-md-flex d-lg-flex flex justify-content-between align-items-baseline py-2 d-none ">
-    <div class="cg orange">
-  <h1>    CG</h1>
-    </div>
-    <ul class="d-flex justify-content-around  list-unstyled nav-r">
-      <li class="orange common intro d-none d-md-block d-lg-block"><span><</span>/intro></li>
-      <li > <a  class="common text-decoration-none  light-grey" href="#portfolio">Portfolio</a></li>
-      <li ><a class="common text-decoration-none light-grey "href="#abt-me">About</a> </li>
-      <li class="common text-decoration-none light-grey">contact</li>
-    </ul>
-  </nav>
-<main>
-  <section class="s-1 ">
-  </section>
-  <section class="d-flex flex-column justify-content-around s-2">
-  <div class="d-flex flex-column justify-content-between">
-    <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <path d="M0 36.52H36V0.52H0V36.52Z" fill="url(#pattern0)"/>
-      <defs>
-      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-      <use xlink:href="#image0" transform="scale(0.015625)"/>
-      </pattern>
-      <image id="image0" width="64" height="64" xlink:href="data:image/png;base64,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"/>
-      </defs>
-      </svg>
-      <p class="pa-1 common">ingenious code  by <br> Blanchard</p>
-      <p class="common pa-2">Hello am a software developer. I can help you build a software feature or <br> website.
-        Look through some of my work and experience! if you like what you see <br>
-        and have project you need coded don't hesitate to contact me </p>
-        
-  </div>
-  <div class="my-work-links d-flex justify-content-between ">
-    <p class="pa-6">My works in social networks</p>
-    <ul class="list-unstyled d-flex justify-content-around  my-work-links-icons">
-      <li class=""> <a class="" href="https://github.com/che30"><i class=" orange fa fa-github"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/cheblanchard/"><i class=" orange fa fa-linkedin-square"></i></a></li>
-      <li> <a href="https://twitter.com/che55085128"><i class="orange fa fa-twitter"></i></a></li>
-    </ul>
-
-  </div>
-      <!-- <p class="best-work pa-3 common  text-center">My best work</p> -->
-  </section>
  
-  <section id="portfolio">
-    <div class="slideshow-container">
-
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="./assets/images/desk-1.png">
-        <div class="text">Caption Text</div>
-      </div>
-<!--     
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="img2.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
-      </div> -->
+  <nav class="d-flex justify-content-between mt-3 align-items-center">
     
-      <!-- <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="img3.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div> -->
-    
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <h1 class="orange font-poppins"> Portfolio</h1>
+  <ul class=" justify-content-around  list-unstyled w-50 d-none d-md-flex d-lg-flex">
+    <li class="orange font-poppins home d-none d-md-block d-lg-block"><span><</span>/home></li>
+    <li > <a  class="font-poppins text-decoration-none  light-grey" href="#portfolio">Portfolio</a></li>
+    <li ><a class="font-poppins text-decoration-none light-grey "href="#abt-me">About</a> </li>
+    <li ><a class="font-poppins text-decoration-none light-grey "href="#my-skills">my skills</a> </li>
+    <li ><a class="font-poppins text-decoration-none light-grey"href="#my-contact">contact</a></li>
+  </ul>
+  <div class="dropdown d-block d-md-none d-lg-none ">
+    <button class="dropbtn"><i class="fa fa-bars"></i></button>
+    <div class="dropdown-content">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#abt-me">About</a>
+      <a href="#my-skills">my skills</a>
+      <a href="#my-contact">contact</a>
     </div>
-    <br>
-    
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-     <div class=" contain-circle ">
-      <div class="circle s-3 ">
-        <img class="  im-1" src="./assets/images/desk-1.png" alt="online shop for musical instruments"> </div>
-      </div>
-    </div> 
-   <div class=" project-detail">
-     <h5>Online shop for musical instruments</h5><p class="pa-description common">
-      An online shop for musical intstruments design from beehance. 
-      This is a capstone at the end of HTML and CSS moule in microverse
-    </p>
-    <p class="pa-lang">
-      Built with HTML/CSS
-    </p>
-    <button class="btn bckgrd text-white"><a href="https://che30.github.io/Capstone-Online-Shop-for-Musical-instruments/" class="text-decoration-none text-white">see project</a></button>
-   </div>
-      <!--  -->
-  </section>
-   
-  <!-- <button class="btn bckgr see-1 py-2 mx-1 w-25 orange">see project</button> -->
-  <section class="d-flex  s-4 ">
-   <div class="d-flex flex-column  justify-content-between">
-    <div class="abt-me">
-      <h2 id="abt-me" class="h4 common">About me</h2>
-      <p class="pa-4 common"> Hi my name is CHE NSOH BLANCHARD <br> 
-        I am a Full Stack Software  developer <br>
-         and teacher of computer sciences
-        Look through my work and experience <br> if you like what you see and have project coded don't hesitate to contact me</p>
-    </div>
-    <div class="my-resume">
-      <div class="btn bckgrd text-white ">
-        <a class="text-white text-decoration-none" href="/assets/document/resume.docx" download>Get my my resume</a>
-        
-      </div>
-    </div>
-   </div>
-   <!-- </div> <li class=""> <a class="" href=""><i class=" orange fa fa-github"></i></a></li> -->
-   <!-- <li><a href=""><i class="orange fa-linkedin-square"></i></a></li>
-   <li> <a href=""><i class="orange fa fa-twitter"></i></a></li> -->
-   <div class="d-flex flex-column s4-1 ">
-   <div class="d-flex  flex-column justify-content-between">
-    <h4 class="h4-1 common">
-      Languages
-    </h4>
-      <p class="pa-5">Javascript(ES5/ES6 <span class="mx-2">Ruby</span> <span>HTML</span> <span>CSS</span></p>
-     </div>
-     <div class="d-flex flex-column justify-content-between">
-      <h4 class="h4-1 common">
-        Frameworks
-      </h4>
-      <p class="pa-5">Bootstrap <span class="mx-2">Ruby on Rails</span> <span>Rspec</span> <span>Capybara</span></p>
-     </div>
-     <div class="d-flex flex-column justify-content-between">
-      <h4 class="h4-1 common">
-        Skills
-      </h4>
-      <p class="pa-5">Bootstrap <span class="mx-2">Github</span> <span>Terminal</span></p>
-     </div>
-   </div>
-  </section>
-  <section class="s-6  bckgrd pb-lg-3 pb-md-3 pb-0 d-flex flex-column align-content-center align-items-center justify-content-between mt-3">
-    <p class="interested text-white common">Interested in collaborating?</p>
-    <p class="pa-f common ">if you have an application you are interested in developing a feature
-       that you nee built or a project that needs coding I'll love to help you with it</p>
-    <form class=" form-w">
-    <div class="d-flex fg-email-name">
-      <div class="form-group">
-        <label for="exampleInputEmail1"></label>
-        <input type="email" class="form-control wf-g" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="che">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1"></label>
-        <input type="email" class="form-control wf-g" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
-      </div>
-    </div>
-      <div class="form-group fg-3">
-        <label for="exampleFormControlTextarea1"></label>
-        <textarea class="form-control fc-3" id="exampleFormControlTextarea1"  placeholder="Message" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn mt-2 text-white get-in-t">Get in touch</button>
-    </form>
-   
   </div>
+  </nav>
+  <main>
+
+
+  <section class="abt-portfolio-background">
   </section>
-  <footer class="  py-2 d-flex  justify-content-center align-content-center align-items-center">
-    <p class="text-white e-mail">che.blancoo58@gmail.com</p>
-    <ul class="list-unstyled d-flex f-l justify-content-center align-content-center align-items-center">
-     
-      <li > <a class="text-decoration-none text-white" href="https://github.com/che30"><i class="text-white  fa fa-github"></i></a></i></li>
-      <li><a class="mx-2" href="https://www.linkedin.com/in/cheblanchard/"><i class=" text-white fa fa-linkedin-square"></i></a></li>
-      <li class=""><a class="text-decoration-none text-white" href="https://twitter.com/che55085128"><i class="text-white fa fa-twitter"></i></a></li>
-      <li class="mx-2"><i class="text-white fa fa-stack-overflow"></i></li>
-      <li class=""><a class="text-decoration-none" href="https://www.facebook.com/nsoh.blanchard"><i class="text-white fa fa-facebook-f"></i></a></li>
-      <li class="m-2"><a href="https://www.instagram.com/nsohblanchard/?hl=en" class="text-decoration-none text-white"><i class="text-white fa fa-instagram"></i></a></li>
-      
+  <section class="abt-portfolio d-flex flex-column justify-content-around">
+    <h2 class="pa-1 font-poppins">Ingenious code  by <br> Blanchard</h2>
+    <p class="font-poppins pa-2">Hello am a software developer. I can help you build a software feature or <br> website.
+      Look through some of my work and experience! if you like what you see <br>
+      and have project you need coded don't hesitate to contact me </p>
+      <p>
+        <div class="pa-3">My works in social networks</div>
+        <ul class="list-unstyled d-flex justify-content-between  my-work-links-icons mt-3">
+          <li class=""> <a class="" href="https://github.com/che30"><i class=" orange fa fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/cheblanchard/"><i class=" orange fa fa-linkedin-square"></i></a></li>
+          <li> <a href="https://twitter.com/che55085128"><i class="orange fa fa-twitter"></i></a></li>
+          <li><a href="https://angel.co/u/che-nsoh"><i class="orange fa fa-angellist"></i></a></li>
+          <li><a href="https://che-blancoo58.medium.com/"><i class="orange fa fa-medium"></i></a></li>
+          
+        </ul>
+    
+      </p>
+  </section>
+  <section class="my-best-work "id="portfolio">
+    <p class="best-work pa-4 common text-center  ">My best work</p>
+    <div class="slideshow-container ">
+      <div class="mySlides1 " >
+        <div class="numbertext">1 / 6</div>
+        <div class=" contain-circle ">
+          <div class="circle ">
+            <img class="  im-1" src="./assets/images/desk-1.png" alt="online shop for musical instruments"> </div>
+          </div>
+        <div class="text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Voluptatibus dolorem aliquam nam praesentium sed adipisci a sint beatae natus quidem facere, 
+          doloribus iste qui id voluptatum ea amet magnam maxime?</div>
+          <div class="technologies">
+            <div class="d-flex justify-content-between font-poppins align-items-center">
+              <div  >Built with:</div>
+              <div class="bg-dark text-white px-2 py-1 rounded-circle">HTML/CSS</div>
+              <div  class="bg-dark text-white px-2 py-1 rounded-circle">Bootstrap</div>
+              <div  class="bg-dark text-white px-2 py-1 rounded-circle">Javascript</div>
+            </div>
+            <div class="see-live bg-orange btn text-white">
+              see live version
+            </div>
+          </div>
+      </div>
+      <div class="mySlides1 " >
+        <div class="numbertext">2 / 6</div>
+        <div class=" contain-circle ">
+          <div class="circle ">
+            <img class="  im-1" src="./assets/images/desk-1.png" alt="online shop for musical instruments"> </div>
+          </div>
+        <div class="text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Voluptatibus dolorem aliquam nam praesentium sed adipisci a sint beatae natus quidem facere, 
+          doloribus iste qui id voluptatum ea amet magnam maxime?</div>
+          <div class="technologies">
+            <div class="d-flex justify-content-between font-poppins align-items-center">
+              <div  >Built with:</div>
+              <div class="bg-dark text-white px-2 py-1 rounded-circle">HTML/CSS</div>
+              <div  class="bg-dark text-white px-2 py-1 rounded-circle">Bootstrap</div>
+              <div  class="bg-dark text-white px-2 py-1 rounded-circle">Javascript</div>
+            </div>
+            <div class="see-live bg-orange btn text-white">
+              see live version
+            </div>
+          </div>
+      </div>
+      <div class="mySlides1 " >
+        <div class="numbertext">3 / 6</div>
+        <div class=" contain-circle ">
+          <div class="circle ">
+            <img class="  im-1" src="./assets/images/desk-1.png" alt="online shop for musical instruments"> </div>
+          </div>
+        <div class="text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Voluptatibus dolorem aliquam nam praesentium sed adipisci a sint beatae natus quidem facere, 
+          doloribus iste qui id voluptatum ea amet magnam maxime?</div>
+          <div class="technologies">
+            <div class="d-flex justify-content-between font-poppins align-items-center">
+              <div  >Built with:</div>
+              <div class="bg-dark text-white px-2 py-1 rounded-circle">HTML/CSS</div>
+              <div  class="bg-dark text-white px-2 py-1 rounded-circle">Bootstrap</div>
+              <div  class="bg-dark text-white px-2 py-1 rounded-circle">Javascript</div>
+            </div>
+            <div class="see-live bg-orange btn text-white">
+              see live version
+            </div>
+          </div>
+      </div>
+      <div class="mySlides1 " >
+        <div class="numbertext">4/ 6</div>
+        <div class=" contain-circle ">
+          <div class="circle ">
+            <img class="  im-1" src="./assets/images/desk-1.png" alt="online shop for musical instruments"> </div>
+          </div>
+        <div class="text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Voluptatibus dolorem aliquam nam praesentium sed adipisci a sint beatae natus quidem facere, 
+          doloribus iste qui id voluptatum ea amet magnam maxime?</div>
+          <div class="technologies">
+            <div class="d-flex justify-content-between font-poppins align-items-center">
+              <div  >Built with:</div>
+              <div class="bg-dark text-white px-2 py-1 rounded-circle">HTML/CSS</div>
+              <div  class="bg-dark text-white px-2 py-1 rounded-circle">Bootstrap</div>
+              <div  class="bg-dark text-white px-2 py-1 rounded-circle">Javascript</div>
+            </div>
+            <div class="see-live bg-orange btn text-white">
+              see live version
+            </div>
+          </div>
+      </div>
+      <div class="mySlides1 " >
+        <div class="numbertext">5 / 6</div>
+        <div class=" contain-circle ">
+          <div class="circle ">
+            <img class="  im-1" src="./assets/images/desk-1.png" alt="online shop for musical instruments"> </div>
+          </div>
+        <div class="text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Voluptatibus dolorem aliquam nam praesentium sed adipisci a sint beatae natus quidem facere, 
+          doloribus iste qui id voluptatum ea amet magnam maxime?</div>
+          <div class="technologies">
+            <div class="d-flex justify-content-between font-poppins align-items-center">
+              <div  >Built with:</div>
+              <div class="bg-dark text-white px-2 py-1 rounded-circle">HTML/CSS</div>
+              <div  class="bg-dark text-white px-2 py-1 rounded-circle">Bootstrap</div>
+              <div  class="bg-dark text-white px-2 py-1 rounded-circle">Javascript</div>
+            </div>
+            <div class="see-live bg-orange btn text-white">
+              see live version
+            </div>
+          </div>
+      </div>
+      <div class="mySlides1 " >
+        <div class="numbertext">6 / 6</div>
+        <div class=" contain-circle ">
+          <div class="circle ">
+            <img class="  im-1" src="./assets/images/desk-1.png" alt="online shop for musical instruments"> </div>
+          </div>
+        <div class="text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Voluptatibus dolorem aliquam nam praesentium sed adipisci a sint beatae natus quidem facere, 
+          doloribus iste qui id voluptatum ea amet magnam maxime?</div>
+          <div class="technologies">
+            <div class="d-flex justify-content-between font-poppins align-items-center">
+              <div  >Built with:</div>
+              <div class="bg-dark text-white px-2 py-1 rounded-circle">HTML/CSS</div>
+              <div  class="bg-dark text-white px-2 py-1 rounded-circle">Bootstrap</div>
+              <div  class="bg-dark text-white px-2 py-1 rounded-circle">Javascript</div>
+            </div>
+            <div class="see-live bg-orange btn text-white">
+              see live version
+            </div>
+          </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next " onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+  </section>
+  <section class="aboutMe mt-5"id="abt-me">
+    <h3 class="text-center">ABOUT ME</h3>
+    <div class="d-flex justify-content-center">
+      <div class="bg-dark  about-div">
+      </div>
+      <h4 class="text-center">Who I am</h4>
+      <div class="bg-dark  about-div">
+      </div>
+    </div>
+    <div class="d-flex justify-content-around mt-4 abtMe-main">
+      <div>
+        <img src="/assets/images/agilelist.jpg" alt="CHE NSOH" class="myImg">
+      </div>
+      <div>
+        <div class="d-flex flex-column align-items-center justify-content-around abtMe-container">
+          <p class="font-poppins">Hi my name is CHE NSOH BLANCHARD</p>
+          <p class="font-poppins">I am a Full Stack Software developer
+            and teacher of computer sciences Look through my work and experience
+            if you like what you see and have project coded don't hesitate to contact me</p>
+            <div class="btn  text-white resume ">
+              <a class="text-white text-decoration-none" href="/assets/document/resume.docx" download>Get my my resume</a>
+              
+            </div>
+        </div> 
+      </div>
+
+
+    </div>
+   
+  </section>
+  <section class="my-skills mt-3" id="my-skills">
+    <h3 class="text-center">MY SKILLS</h3>
+    <div class="d-flex justify-content-center">
+      <div class="bg-dark  about-div">
+      </div>
+      <h4 class="text-center">what I know</h4>
+      <div class="bg-dark  about-div">
+      </div>
+    </div>
+    <ul class="list-unstyled d-flex justify-content-around font-poppins">
+      <li class="lang">Languages:</li>
+      <ul class="list-unstyled d-flex justify-content-around  w-50">
+        <li>Ruby</li>
+        <li>Javascript</li>
+        <li>Python</li>
+        <li>C</li>
+      </ul>
     </ul>
-
-  </footer>
+    <ul class="list-unstyled d-flex justify-content-around font-poppins">
+      <li class="lang">Frameworks:</li>
+      <ul class="list-unstyled d-flex justify-content-around  w-50">
+        <li>Bootstrap</li>
+        <li>Ruby on Rails</li>
+        <li>React</li>
+      </ul>
+    </ul>
+    <ul class="list-unstyled d-flex justify-content-around font-poppins">
+      <li class="lang">Others:</li>
+      <ul class="list-unstyled d-flex justify-content-around  w-50">
+        <li>Git</li>
+        <li>Gitflow/Github</li>
+        <li>Heroku</li>
+      </ul>
+  </section>
 </main>
+<footer class="background-orange pt-3" id="my-contact">
+<section class=" d-flex flex-column align-items-center align-content-center">
+  <h2 class="text-white font-poppins">Interested in collaborating?</h2>
+  <p class="text-white footerParagraph">if you have an application you are interested in developing, a feature that you need built 
+    or a project that needs coding I'll love to help you with it</p>
+    <form class=" ">
+      <div class="d-flex justify-content-between">
+        <div class="form-group input-1">
+          <label for="exampleInputEmail1"></label>
+          <input type="email" class="form-control  " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="che">
+        </div>
+        <div class="form-group input-2">
+          <label for="exampleInputEmail1"></label>
+          <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
+        </div>
+      </div>
+        <div class="form-group ">
+          <label for="exampleFormControlTextarea1"></label>
+          <textarea class="form-control " id="exampleFormControlTextarea1"  placeholder="Message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn mt-2 text-white get-in-touch text-center">Get in touch</button>
+      </form>
+</section>
+<div class=" last-footer  py-2 d-flex  justify-content-center align-content-center align-items-center">
+  <p class="text-white e-mail">che.blancoo58@gmail.com</p>
+  <ul class="list-unstyled d-flex  justify-content-center align-content-center align-items-center">
+   
+    <li > <a class="text-decoration-none text-white" href="https://github.com/che30"><i class="text-white  fa fa-github"></i></a></i></li>
+    <li><a class="mx-2" href="https://www.linkedin.com/in/cheblanchard/"><i class=" text-white fa fa-linkedin-square"></i></a></li>
+    <li class=""><a class="text-decoration-none text-white" href="https://twitter.com/che55085128"><i class="text-white fa fa-twitter"></i></a></li>
+    <li class="mx-2"><i class="text-white fa fa-stack-overflow"></i></li>
+    <li class=""><a class="text-decoration-none" href="https://www.facebook.com/nsoh.blanchard"><i class="text-white fa fa-facebook-f"></i></a></li>
+    <li class="m-2"><a href="https://www.instagram.com/nsohblanchard/?hl=en" class="text-decoration-none text-white"><i class="text-white fa fa-instagram"></i></a></li>
+    
+  </ul>
 
-  <script src="./assets/main.js"></script>
+</div>
+</footer>
+  <script >
+   var slideIndex = [1,1];
+var slideId = ["mySlides1"]
+showSlides(1, 0);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+  
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  console.log()
+  if (n > x.length) {
+    slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
   crossorigin="anonymous"></script>
