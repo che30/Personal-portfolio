@@ -86,6 +86,7 @@ background: url(../images/backgroundshapesdesktop.png);
 }
 .my-work-links-icons{
 width: 25%;
+/* font-size: 4rem; */
 }
 .best-work{
   /* margin-left: 5%; */
@@ -93,7 +94,7 @@ width: 25%;
 }
 .slideshow-container {
 margin-left: 25%;
-}
+} 
 .mySlides1 img{
    width: 75%; 
   height: 300px;
@@ -137,6 +138,7 @@ margin-left: 25%;
 }
 .text{
   max-width: 78%;
+  margin-top: 20px;
 }
 
 .technologies{
@@ -184,15 +186,19 @@ height: 300px;
   }
   .prev, .next {
   
-    top: 150%;
+    top: 160%;
    
   }
+  .text{
+    
+    margin-top: 70px;
+  }
   .next {
-    right: 4%;
+    right: 30%;
     border-radius: 3px 0 0 3px;
   }
   .prev{
-    left: 11%;
+    left: 30%;
     border-radius: 3px 0 0 3px;
   }
   .see-live{
@@ -206,6 +212,7 @@ height: 300px;
   width: 300px;
   height: 300px;
   }
+
   
   .abtMe-main{
     flex-direction: column;
@@ -248,4 +255,7 @@ nav{
 .my-work-links-icons{
   width: 90%;
   }
+    .slideshow-container {
+    margin-left: 15%;
+    }  
 }
