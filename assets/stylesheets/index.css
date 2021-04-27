@@ -199,7 +199,28 @@ height: 300px;
 
 }
 @media (max-width: 1024px) and (min-width: 769px){
- 
+  .prev, .next {
+  
+    top: 155%;
+     
+  }
+  .next{
+    right: 10%;
+  }
+  
+  .abtMe-main{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+ .abtMe-main{
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
 }
 @media (max-width: 567px){
   .abt-portfolio-background{
