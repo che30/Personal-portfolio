@@ -196,6 +196,11 @@ height: 300px;
     align-items: center;
     align-content: center;
   }
+  .text{
+    
+    margin-top: 90px;
+  }
+  
 
 }
 @media (max-width: 1024px) and (min-width: 769px){
@@ -206,6 +211,10 @@ height: 300px;
   }
   .next{
     right: 10%;
+  }
+  .text{
+    
+    margin-top: 90px;
   }
   
   .abtMe-main{
