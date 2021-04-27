@@ -200,7 +200,9 @@ height: 300px;
     
     margin-top: 90px;
   }
-  
+  .slideshow-container {
+    margin-left: 13%;
+    }  
 
 }
 @media (max-width: 1024px) and (min-width: 769px){
@@ -229,6 +231,9 @@ height: 300px;
   align-items: center;
   align-content: center;
 }
+/* .slideshow-container {
+  margin-left: 17%;
+  }   */
 
 }
 @media (max-width: 567px){
@@ -240,7 +245,7 @@ height: 300px;
   }
   .prev, .next {
   
-    top: 162%;
+    top: 1010px;
    
   }
   .text{
